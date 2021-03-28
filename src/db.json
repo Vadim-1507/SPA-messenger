@@ -1,0 +1,175 @@
+{
+  "auth": {
+    "id": 1111,
+    "token": "qwerweretwe214",
+    "avatar": null
+  },
+  "user": [
+    {
+      "id": 1452,
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Director_Ram_at_the_Aruvi_Movie_Premiere.jpg",
+      "name": "Василий Иванович",
+      "status": "Мы запускаем новую командную сеть",
+      "phoneNum": "+7 800 800 88 88",
+      "email": "email@director.com",
+      "post": "Директор",
+      "website": null,
+      "github": null,
+      "social": {
+        "vk": "https://vk.com",
+        "facebook": "https://www.facebook.com",
+        "instagram": null,
+        "twitter": "https://twitter.com",
+        "youtube": null
+      }
+    },
+    {
+      "id": 5412,
+      "avatar": "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG98ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+      "name": "Анастасия Черноус",
+      "status": "Я творческая личность!",
+      "phoneNum": "+7 100 100 11 11",
+      "email": "email@designer.ru",
+      "post": "Дизайнер",
+      "website": "https://website.com",
+      "github": "https://github.com/",
+      "social": {
+        "vk": "https://vk.com",
+        "facebook": null,
+        "instagram": "https://www.instagram.com/",
+        "twitter": null,
+        "youtube": "https://www.youtube.com/"
+      }
+    },
+    {
+      "id": 6874,
+      "avatar": "https://picjumbo.com/wp-content/uploads/alone-with-his-thoughts-1080x720.jpg",
+      "name": "Dmitriy Veselow",
+      "status": null,
+      "phoneNum": "+7 200 200 22 22",
+      "email": "email@backend.com",
+      "post": "back-end азработчик",
+      "website": null,
+      "github": "https://github.com/",
+      "social": {
+        "vk": null,
+        "facebook": "https://www.facebook.com",
+        "instagram": "https://www.instagram.com/",
+        "twitter": "https://twitter.com",
+        "youtube": null
+      }
+    },
+    {
+      "id": 1111,
+      "avatar": null,
+      "name": "Вадим Файрушин",
+      "status": null,
+      "phoneNum": null,
+      "email": "fayruvshin@gmail.com",
+      "post": "front-end разработчик",
+      "website": null,
+      "github": "https://github.com/Vadim-1507",
+      "social": {
+        "vk": null,
+        "facebook": null,
+        "instagram": null,
+        "twitter": null,
+        "youtube": null
+      }
+    }
+  ],
+  "workingMessages": [
+    {
+      "id": 1,
+      "sender": {
+        "name": "Василий Иванович",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Director_Ram_at_the_Aruvi_Movie_Premiere.jpg"
+      },
+      "message": "Всех приветствую в рабочем чате! Здесь будут обсуждаться рабочие моменты.",
+      "sent": false
+    },
+    {
+      "id": 2,
+      "sender": {
+        "name": "Анастасия Черноус",
+        "avatar": "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG98ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+      },
+      "message": "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
+      "sent": false
+    },
+    {
+      "id": 3,
+      "sender": {
+        "name": "Dmitriy Veselow",
+        "avatar": "https://picjumbo.com/wp-content/uploads/alone-with-his-thoughts-1080x720.jpg"
+      },
+      "message": "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
+      "sent": false
+    },
+    {
+      "id": 4,
+      "sender": {
+        "name": "Dmitriy Veselow",
+        "avatar": "https://picjumbo.com/wp-content/uploads/alone-with-his-thoughts-1080x720.jpg"
+      },
+      "message": "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
+      "sent": false
+    },
+    {
+      "id": 5,
+      "sender": {
+        "name": "Василий Иванович",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Director_Ram_at_the_Aruvi_Movie_Premiere.jpg"
+      },
+      "message": "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
+      "sent": false
+    }
+  ],
+  "freeMessages": [
+    {
+      "id": 1,
+      "sender": {
+        "name": "Василий Иванович",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Director_Ram_at_the_Aruvi_Movie_Premiere.jpg"
+      },
+      "message": "Всех приветствую в свободном чате! Здесь будут обсуждаться корпоративные новости.",
+      "sent": false
+    },
+    {
+      "id": 2,
+      "sender": {
+        "name": "Анастасия Черноус",
+        "avatar": "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG98ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+      },
+      "message": "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
+      "sent": false
+    },
+    {
+      "id": 3,
+      "sender": {
+        "name": "Dmitriy Veselow",
+        "avatar": "https://picjumbo.com/wp-content/uploads/alone-with-his-thoughts-1080x720.jpg"
+      },
+      "message": "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
+      "sent": false
+    },
+    {
+      "id": 4,
+      "sender": {
+        "name": "Dmitriy Veselow",
+        "avatar": "https://picjumbo.com/wp-content/uploads/alone-with-his-thoughts-1080x720.jpg"
+      },
+      "message": "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
+      "sent": false
+    },
+    {
+      "id": 5,
+      "sender": {
+        "name": "Василий Иванович",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Director_Ram_at_the_Aruvi_Movie_Premiere.jpg"
+      },
+      "message": "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.",
+      "sent": false
+    }
+  ]
+}

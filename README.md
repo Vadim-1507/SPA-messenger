@@ -53,7 +53,7 @@ axios использовался для создания уровня DAL.<br/>
 
 Структура SPA: 
 
-![Structure](https://user-images.githubusercontent.com/72735702/112873571-7a06ed80-90ca-11eb-9470-f239743ce2c1.jpg)
+![Structure](https://user-images.githubusercontent.com/72735702/112877589-9fe2c100-90cf-11eb-887d-b51b4c4fdf7b.jpg)
 
 # Запуск
 

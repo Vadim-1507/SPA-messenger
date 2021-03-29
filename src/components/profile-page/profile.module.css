@@ -1,0 +1,145 @@
+.profile {
+    height: 80%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: #1da1f2;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.header a:hover {
+    color: #2477ab;
+}
+
+.about_user {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.user_info h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.user_info .item, .more_info .item {
+    margin-top: 7px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.more_info {
+    margin-bottom: 30px;
+}
+
+.more_info h3 {
+    color: #5181B8;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.more_info .item a {
+    text-decoration: none;
+    color: #333333;
+    transition: .3s;
+}
+
+.more_info .item a:hover {
+    color: #666666;
+}
+
+.social a {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #666666;
+    transition: .3s;
+}
+
+.more_info .item .social a.vk:hover {
+    color: #2787F5;
+}
+
+.more_info .item .social a.fb:hover {
+    color: #065ccb;
+}
+
+.more_info .item .social a.inst:hover {
+    color: #A92B8F;
+}
+
+.more_info .item .social a.twit:hover {
+    color: #1da1f2;
+}
+
+.more_info .item .social a.yt:hover {
+    color: #ff0101;
+}
+
+.btn_logOut {
+    border: none;
+    background: none;
+    color: #1da1f2;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn_logOut i {
+    margin-right: 8px;
+}
+
+.btn_logOut:hover {
+    color: #2477ab;
+}
+
+.btn_logOut:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 601px) {
+    .header {
+        align-items: baseline;
+    }
+
+    .user_info {
+        display: block;
+    }
+
+    .avatar {
+        margin: 0 auto 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header h3 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .user_info .item, .more_info .item {
+        font-size: 16px;
+    }
+}

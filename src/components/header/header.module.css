@@ -1,0 +1,136 @@
+.header {
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo span {
+    position: absolute;
+    top: 30px;
+    left: -8px;
+    font-size: 16px;
+    font-weight: 500;
+    transform: rotate(-27deg);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.menu_item {
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.menu_item:hover {
+    background: #EDEEF0;
+}
+
+.menu_item:hover a {
+    color: #345172;
+}
+
+.menu_item a {
+    text-decoration: none;
+    color: #5181B8;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu_item a.active {
+    color: #a9a925;
+}
+
+.menu_item a span {
+    display: block;
+    font-size: 12px;
+    text-transform: lowercase;
+    margin-top: -5px;
+}
+
+@media screen and (max-width: 1400px) {
+    .cont {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        margin-bottom: 30px;
+    }
+
+    .cont {
+        height: 60px;
+        padding: 5px 0;
+    }
+
+    .logo {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .logo span {
+        top: 25px;
+        left: -2px;
+        font-size: 12px;
+        transform: rotate(-29deg);
+    }
+
+    .menu {
+        width: 300px;
+    }
+
+    .menu_item a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .menu {
+        width: 225px;
+    }
+
+    .menu_item {
+        padding: 5px;
+    }
+
+    .menu_item a {
+        font-size: 15px;
+    }
+
+    .menu_item a span {
+        font-size: 10px;
+    }
+}

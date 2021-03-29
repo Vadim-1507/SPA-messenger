@@ -1,0 +1,66 @@
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.content {
+    background: #ffffff;
+    height: 77vh;
+    box-sizing: border-box;
+    padding: 15px 25px;
+}
+
+.scrolling {
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrolling::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.title {
+    background: rgba(255, 255, 255, 0.9);
+    width: 272px;
+    margin: 10px 0 30px;
+    color: #5181B8;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content.nature {
+    background: url("../../media-src/nature.jpg") no-repeat;
+}
+
+.content.town {
+    background: url("../../media-src/town.jpg") no-repeat;
+}
+
+.content.night {
+    background: url("../../media-src/night.png") no-repeat;
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        height: 80vh;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .title {
+        width: 100%;
+        font-size: 20px;
+    }
+}

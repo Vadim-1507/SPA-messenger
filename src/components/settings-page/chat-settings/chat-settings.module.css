@@ -1,0 +1,94 @@
+.background_chat, .message_background {
+    margin-bottom: 20px;
+}
+
+.background_chat span, .message_background span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.background_chat button {
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+.background_chat button:hover, .message_background button:hover {
+    border: none;
+}
+
+.background_chat button:focus, .message_background button:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.background_chat button img {
+    height: 100%;
+}
+
+.background_chat button.classic {
+    background: #ffffff;
+    border: 1px solid #666666;
+}
+
+.message_background button {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+
+.message_background button:hover {
+    border: 1px solid #333333;
+}
+
+.message_background button.yellow {
+    background: #ffff00;
+}
+
+.message_background button.pale_blue {
+    background: #1da1f2;
+}
+
+.message_background button.green {
+    background: #09ca09;
+}
+
+.message_background button.blue {
+    background: #0000ff;
+}
+
+.message_background button.red {
+    background: #f53d3d;
+}
+
+@media screen and (max-width: 600px) {
+    .social_fields {
+        display: block;
+    }
+
+    .option input, .social_option input {
+        height: 37px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .back_img button {
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .back_img button {
+        margin: 0 auto 15px;
+        display: block;
+        width: 200px;
+        height: 250px;
+    }
+}

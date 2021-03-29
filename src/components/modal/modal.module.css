@@ -1,0 +1,174 @@
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EDEEF0;
+}
+
+.modal {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 500px;
+    height: 550px;
+    top: calc(50% - 275px);
+    left: calc(50% - 250px);
+    background: #ffffff;
+    border-radius: 16px;
+}
+
+.logo {
+    position: relative;
+    margin: 0 auto 40px;
+    width: 200px;
+    height: 200px;
+}
+
+.logo img {
+    width: 100%
+}
+
+.logo span {
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 105px;
+    left: 12px;
+    transform: rotate(-30deg);
+}
+
+.form {
+    text-align: center;
+}
+
+.field {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.field label {
+    font-size: 20px;
+}
+
+.field input {
+    margin-top: 8px;
+    display: block;
+    height: 42px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 8px 15px;
+    border: 1px solid #EDEEF0;
+    border-radius: 6px;
+}
+
+.field input:focus {
+    outline: none;
+    border: 1px solid rgba(29, 141, 262, 0.8);
+}
+
+.field.password input {
+    padding-right: 50px;
+}
+
+.field.password {
+    margin-bottom: 10px;
+}
+
+.field button {
+    position: absolute;
+    top: 38px;
+    right: 5px;
+    border: none;
+    background: none;
+    font-size: 24px;
+}
+
+.field button:focus {
+    outline: none;
+}
+
+.error {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.error span {
+    color: #ff0101;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn_auth {
+    width: 180px;
+    padding: 10px;
+    border: none;
+    background: #44ac44;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 16px;
+    transition: .3s;
+}
+
+.btn_auth:hover {
+    background: #23c823;
+}
+
+.btn_auth:focus {
+    outline: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .modal {
+        width: 400px;
+        height: 500px;
+        left: calc(50% - 200px);
+        top: calc(50% - 250px);
+    }
+
+    .logo {
+        height: 140px;
+        width: 140px;
+    }
+
+    .logo span {
+        font-size: 28px;
+        top: 77px;
+        left: 1px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .modal {
+        width: 300px;
+        height: 400px;
+        left: calc(50% - 150px);
+        top: calc(50% - 200px);
+    }
+
+    .logo {
+        height: 90px;
+        width: 90px;
+        margin-bottom: 20px;
+    }
+
+    .logo span {
+        font-size: 18px;
+        top: 50px;
+        left: 0;
+    }
+
+    .field {
+        margin-bottom: 15px;
+    }
+
+    .btn_auth {
+        font-size: 20px;
+    }
+}

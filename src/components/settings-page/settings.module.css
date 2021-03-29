@@ -1,0 +1,86 @@
+.settings {
+    height: 80%;
+}
+
+.profile_settings h3, .chat_settings h3 {
+    font-size: 24px;
+    margin: 0 0 15px;
+    color: #333333;
+}
+
+.profile_settings, .chat_settings {
+    margin-bottom: 30px;
+}
+
+.option {
+    margin-bottom: 10px;
+}
+
+.option label, .option span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.option input, .social_option input {
+    display: block;
+    width: 60%;
+    font-size: 16px;
+    padding: 8px 15px;
+    background: rgba(29, 141, 262, 0.4);
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.option input:focus, .social_option input:focus {
+    outline: none;
+    border: 1px solid rgba(29, 141, 262, 0.8);
+}
+
+.social_fields {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.social_option input {
+    width: 90%;
+}
+
+.settings_field span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.save {
+    margin-top: 15px;
+    padding: 8px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #5181B8;
+    border: none;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.save:hover {
+    background: #6690C1;
+}
+
+.save:focus {
+    outline: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .social_fields {
+        display: block;
+    }
+
+    .option input, .social_option input {
+        height: 37px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}

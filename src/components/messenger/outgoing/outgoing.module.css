@@ -1,0 +1,92 @@
+.outgoing {
+    box-sizing: border-box;
+    position: relative;
+    background: rgba(29, 161, 242, 0.5);
+    display: flex;
+    border-radius: 16px;
+    padding: 5px 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    float: right;
+}
+
+
+.outgoing.yellow {
+    background: rgba(255, 255, 0, 0.5);
+}
+
+.outgoing.green {
+    background: rgba(9, 202, 9, 0.5);
+}
+
+.outgoing.blue {
+    background: rgba(0, 0, 255, 0.5);
+}
+
+.outgoing.red {
+    background: rgba(245, 61, 61, 0.5);
+}
+
+.outgoing:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -9px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgba(29, 161, 242, 0.5);
+    border-bottom-left-radius: 10px;
+    transform: rotate(-5deg);
+}
+
+.outgoing.yellow:before {
+    border-bottom: 10px solid rgba(255, 255, 0, 0.5);
+
+}
+
+.outgoing.green:before {
+    border-bottom: 10px solid rgba(9, 202, 9, 0.5);
+}
+
+.outgoing.blue:before {
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.outgoing.red:before {
+    border-bottom: 10px solid rgba(245, 61, 61, 0.5);
+}
+
+.outgoing .time {
+    text-align: right;
+}
+
+.edit {
+    color: #666666;
+    margin-right: 10px;
+}
+
+.btn {
+    visibility: hidden;
+    padding-top: 10px;
+}
+
+.outgoing:hover .btn {
+    visibility: visible;
+}
+
+.btn button {
+    background: none;
+    border: none;
+    margin: 10px 0;
+    color: #bcbaba;
+    transition: .3s;
+}
+
+.btn button:hover {
+    color: #666666;
+}
+
+.message {
+    font-size: 16px;
+    font-family: Arial;
+}
+

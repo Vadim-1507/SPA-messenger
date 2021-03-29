@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Возможности
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+В SPA реализована система авторизации (простая), после входа отображается главая страница (рабочий чат) из которой можно перейти на следующие страници: 
+   1. Чат для простого общения;
+   2. Профиль;
+   3. Настройки.
 
-## Available Scripts
+## Страницы чатов
 
-In the project directory, you can run:
+На страницах чатов реализованы возможности отправки, измениния и удаление сообщений (редактирование и удаление только отправленых сообщений).
+После изменения сообщения появляется отметка, о редакировании. Во время редактирования можно нажать кнопку отмены.
+При нажатии на Имя отправителя сообщения будет выполнен переход на страницу чата выбранного пользователя.
 
-### `npm start`
+## Страница профиля
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+На странице профиля отображаються данные о выбраном пользователе. Поля "website", "github" и "social" в ответе содержат ссылки.
+Поле "social" имеет динамический ответ (выводит только те сети на которые есть ссылка).
+В своем профиле дополнительно отображаются: ссылка на страницу настроек, и кнопка выхода из аккаунта (возвращает на страницу авторизации).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Страница настроек
 
-### `npm test`
+На странице настроек есть 3 раздела: 
+   1. Настройки профиля;
+   2. Настройки рабочего чата;
+   3. Настройки свободного чата.
+В разделе настроек профиля можно изменить данные о себе (аватарку, имя, статус, номер телефона, електронную почту, должность, ссылки на сайт, github и социальные сети).
+В разделах настроек чатов можно изменить подложки чатов, и цвета сообщений (для каждой страницы отдельно).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Страница авторизации
 
-### `npm run build`
+На странице авторизации реализованы простая система проверки введенных данных (проверяеться заполненость полей, если в данных допущена ошибка после нажатия кнопки "enter" высветиться сообщение об ошибке) и возможность просмотра пароля.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Общее
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+В SPA реализован адаптивная верстка, для удобства использования на разных устройствах. И реализовано сохранение изменений в localStore.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Архитектура 
 
-### `npm run eject`
+При разработке SPA использовались пакеты:
+    1. axios;
+    2. json-server;
+    3. react;
+    4. redux;
+    5. redux-thunk;
+    6. css.modules.
+axios использовался для создания уровня DAL.
+В качестве "сервера" эксплуатировался json-server.
+Для создания и отображения UI - react.
+Для уровня BLL - redux.
+В качестве посредника между BLL и DAL - redux-thunk.
+Для стилизации css.modules.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Структура SPA: 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Запуск
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Проэкт залит на github.
+#### Для загрузки, установки пакетов и запуска SPA используйте терминал среды разработи или системы, gitBush или консоль
+Для загрузки приложения на компьютер: 
+  1. Выберете папку куда хотите установить;
+  2. Выполните команды 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`git clone https://github.com/Vadim-1507/SPA-messenger.git` - загрузит код на ваш компьютер.
+`npm install` - установит все необходимые для работы приложения пакеты.
 
-## Learn More
+После установки необходимо запустить сервер `json-server src/db.json` для корректной работы нужен порт: `localhost:3000`.
+После успешного запуска сервера запустите приложение командой `npm start`. 
+Так как стандартный порт, `localhost:3000` занят сервером, система запросит разрешение для использования другого свободного порта, для избежания ошибок, необходимо дать разрешение.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Авторизация 
+login: user
+password: password

@@ -9,7 +9,7 @@ import {connect} from "react-redux";
 function WorkSpace({
                        getWorkMessages, textWorkMessage, sendWorkMessage, deleteWorkMessage, editWorkMessage,
                        cancelWorkEdit, changeWorkMessage, setWorkMessages, setWorkColor, title, messages, messageText,
-                       edit, editID, background, messageColor, id, name, avatar
+                       edit, editID, background, messageColor, id
                    }) {
 
     useEffect(() => {
@@ -30,7 +30,7 @@ function WorkSpace({
         if (edit) {
             changeWorkMessage(editID);
         } else {
-            sendWorkMessage({id, name, avatar, edit});
+            sendWorkMessage(id);
         }
         saveInfo()
     }
@@ -67,8 +67,6 @@ const mapStateToProps = state => ({
     background: state.workSpace.background,
     messageColor: state.workSpace.messageColor,
     id: state.auth.id,
-    name: state.auth.name,
-    avatar: state.auth.avatar
 });
 
 export default connect(mapStateToProps, {

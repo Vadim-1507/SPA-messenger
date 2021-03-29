@@ -26,9 +26,7 @@ const freeSpaceReducer = (state = initialState, action) => {
             const newMessage = {
                 id: state.messages.length + 2,
                 sender: {
-                    userId: action.data.id,
-                    name: action.data.name,
-                    avatar: action.data.avatar
+                    userId: action.data,
                 },
                 edited: false,
                 message: state.messageText

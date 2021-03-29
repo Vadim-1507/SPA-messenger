@@ -124,6 +124,10 @@
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
+.btn_auth:disabled {
+    background: #666666;
+}
+
 @media screen and (max-width: 600px) {
     .modal {
         width: 400px;

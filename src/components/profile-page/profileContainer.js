@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
 import Profile from "./profile";
 import {getProfile, setProfile} from "../../redux/profile-reducer";
+import {logOut} from "../../redux/auth-reducer";
 
 function ProfileContainer(props) {
        useEffect(() => {
@@ -14,9 +15,15 @@ function ProfileContainer(props) {
         }
     }, []);
 
+       function logOutHandler () {
+           localStorage.removeItem('token');
+           props.logOut();
+           props.history.push('/');
+       }
+
        const myProfile = (!props.match.params.id || props.match.params.id == props.myId);
 
-    return <Profile state={props.profile} myProfile={myProfile}/>
+    return <Profile state={props.profile} myProfile={myProfile} logOutHandler={logOutHandler}/>
 }
 
 const mapStateToProps = state => ({
@@ -26,4 +33,4 @@ const mapStateToProps = state => ({
 
 const ProfileContainerWithRouter = withRouter(ProfileContainer)
 
-export default connect(mapStateToProps, {getProfile, setProfile})(ProfileContainerWithRouter);
+export default connect(mapStateToProps, {getProfile, setProfile, logOut})(ProfileContainerWithRouter);

@@ -3,7 +3,7 @@ import avatar from "../../media-src/user.jfif"
 import styles from "./profile.module.css";
 import {NavLink} from "react-router-dom";
 
-function Profile({state, myProfile}) {
+function Profile({state, myProfile, logOutHandler}) {
 
     const visible = myProfile ? 'visible' : 'hidden';
     const vk = state.social.vk ? <a href={state.social.vk} className={styles.vk}><i className="fab fa-vk"/></a> : undefined;
@@ -45,7 +45,7 @@ function Profile({state, myProfile}) {
                         </div>
                     </div>
                 </div>
-                <button className={styles.btn_logOut} style={{visibility: visible}}><i className="fas fa-sign-out-alt"/>Log out</button>
+                <button className={styles.btn_logOut} style={{visibility: visible}} onClick={() => logOutHandler()}><i className="fas fa-sign-out-alt"/>Log out</button>
             </div>
         </div>
     );

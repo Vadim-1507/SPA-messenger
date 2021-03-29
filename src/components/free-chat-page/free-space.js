@@ -8,7 +8,7 @@ import {connect} from "react-redux";
 
 function FreeSpace({
                        getFreeMessages, sendFreeMessage, textFreeMessage, title, messages, messageText, edit, id,
-                       name, avatar, editFreeMessage, cancelFreeEdit, changeFreeMessage, deleteFreeMessage, editID,
+                       editFreeMessage, cancelFreeEdit, changeFreeMessage, deleteFreeMessage, editID,
                        setFreeMessages, background, messageColor, setFreeColor
                    }) {
 
@@ -30,7 +30,7 @@ function FreeSpace({
         if (edit) {
             changeFreeMessage(editID);
         } else {
-            sendFreeMessage({id, name, avatar, edit});
+            sendFreeMessage(id);
         }
         saveInfo()
     }
@@ -67,8 +67,6 @@ const mapStateToProps = state => ({
     background: state.freeSpace.background,
     messageColor: state.freeSpace.messageColor,
     id: state.auth.id,
-    name: state.auth.name,
-    avatar: state.auth.avatar
 });
 
 export default connect(mapStateToProps, {

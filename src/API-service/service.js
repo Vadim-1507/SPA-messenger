@@ -25,3 +25,11 @@ export const profileApi = {
             .then(res => res.data);
     }
 };
+
+
+export const authApi = {
+    getAuthInfo() {
+        return instance.get(`/auth`)
+            .then(res => res.data);
+    }
+};

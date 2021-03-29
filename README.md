@@ -43,6 +43,7 @@
     4. redux;<br/>
     5. redux-thunk;<br/>
     6. css.modules.<br/>
+
 axios использовался для создания уровня DAL.<br/>
 В качестве "сервера" эксплуатировался json-server.<br/>
 Для создания и отображения UI - react.<br/>
